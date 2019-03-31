@@ -4,32 +4,21 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".StartActivity">
+    app:layoutDescription="@xml/motion_scene_start_layout"
+    tools:context=".StartActivity"
+    android:id="@+id/activity_start">
 
     <Button
         android:id="@+id/button_play"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
         android:text="PLAY"
-        app:layout_constraintBottom_toTopOf="@+id/button_setting"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_chainStyle="packed" />
+        android:visibility="gone"/>
 
     <Button
         android:id="@+id/button_setting"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:layout_marginBottom="8dp"
         android:text="Settings"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/button_play"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="@+id/button_play"
-        app:layout_constraintTop_toBottomOf="@+id/button_play"
-        app:layout_constraintVertical_bias="0.487" />
+        android:visibility="gone"/>
 </android.support.constraint.motion.MotionLayout>
