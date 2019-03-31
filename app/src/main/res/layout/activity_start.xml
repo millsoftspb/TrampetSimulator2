@@ -2,23 +2,31 @@
 <android.support.constraint.motion.MotionLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_start_start"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/background_start_layout"
     app:layoutDescription="@xml/motion_scene_start_layout"
-    tools:context=".StartActivity"
-    android:id="@+id/activity_start">
+    tools:context=".StartActivity">
 
     <Button
         android:id="@+id/button_play"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="PLAY"
-        android:visibility="gone"/>
+        app:layout_constraintBottom_toTopOf="@+id/button_setting"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="spread"
+        android:onClick="start_play"/>
 
     <Button
         android:id="@+id/button_setting"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Settings"
-        android:visibility="gone"/>
+        android:layout_marginTop="8dp"
+        android:text="SETTINGS"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_play"
+        android:onClick="start_settings"/>
+
 </android.support.constraint.motion.MotionLayout>

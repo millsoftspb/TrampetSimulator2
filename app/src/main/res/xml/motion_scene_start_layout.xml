@@ -2,54 +2,48 @@
 <MotionScene xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
     <Transition
-        app:constraintSetStart="@id/start_scene"
+        android:id="@+id/my_transition"
         app:constraintSetEnd="@id/end_scene"
-        app:duration="1000">
+        app:constraintSetStart="@id/start_scene"
+        app:duration="1500">
     </Transition>
 
     <ConstraintSet android:id="@+id/start_scene">
-
-        <Constraint android:id="@+id/button_play"
-            android:layout_marginTop="8dp"
-            app:layout_constraintBottom_toTopOf="@+id/button_setting"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.5"
+        <Constraint
+            android:id="@+id/button_play"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toTopOf="@id/button_setting"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_chainStyle="packed"
-            android:visibility="visible"/>
-
-        <Constraint android:id="@+id/button_setting"
-            android:layout_marginBottom="8dp"
+            app:layout_constraintTop_toTopOf="parent" />
+        <Constraint
+            android:id="@+id/button_setting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="@+id/button_play"
-            app:layout_constraintHorizontal_bias="0.5"
-            app:layout_constraintStart_toStartOf="@+id/button_play"
-            app:layout_constraintTop_toBottomOf="@+id/button_play"
-            app:layout_constraintVertical_bias="0.487"
-            android:visibility="visible"/>
-
+            app:layout_constraintStart_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/button_play" />
     </ConstraintSet>
 
     <ConstraintSet android:id="@+id/end_scene">
 
-        <Constraint android:id="@+id/button_play"
-            android:layout_marginTop="8dp"
-            app:layout_constraintBottom_toTopOf="@+id/button_setting"
+        <Constraint
+            android:id="@+id/button_play"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toTopOf="@id/button_setting"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_chainStyle="packed"/>
-
-        <Constraint android:id="@+id/button_setting"
-            android:layout_marginBottom="8dp"
+            app:layout_constraintTop_toTopOf="parent" />
+        <Constraint
+            android:id="@+id/button_setting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="@+id/button_play"
-            app:layout_constraintHorizontal_bias="0.5"
-            app:layout_constraintStart_toStartOf="@+id/button_play"
-            app:layout_constraintTop_toBottomOf="@+id/button_play"
-            app:layout_constraintVertical_bias="0.487" />
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/button_play" />
+
 
     </ConstraintSet>
 
