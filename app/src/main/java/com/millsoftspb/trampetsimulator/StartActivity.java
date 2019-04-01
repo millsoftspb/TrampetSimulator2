@@ -20,8 +20,6 @@ MotionLayout activity_start_layout;
     protected void onStart() {
         super.onStart();
         activity_start_layout.transitionToEnd();
-        Toast toast = Toast.makeText(getApplicationContext(),"start transition",Toast.LENGTH_SHORT);
-        toast.show();
     }
 
     public void start_play(View view) {
