@@ -4,7 +4,7 @@
     <Transition
         app:constraintSetEnd="@id/end_scene_playlayout"
         app:constraintSetStart="@id/start_scene_playlayout"
-        app:duration="120">
+        app:duration="80">
 
 
     </Transition>
@@ -17,6 +17,12 @@
             android:id="@+id/imageNote"
             android:layout_width="1dp"
             android:layout_height="1dp"
+            app:layout_constraintBottom_toBottomOf="@+id/imageTrumpet"
+            app:layout_constraintEnd_toStartOf="@+id/imageTrumpet"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintHorizontal_chainStyle="packed"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/imageTrumpet"
             />
 
     </ConstraintSet>
@@ -39,15 +45,8 @@
         </Constraint>
         <Constraint
             android:id="@+id/imageNote"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-            app:layout_constraintBottom_toBottomOf="@+id/imageTrumpet"
-            app:layout_constraintEnd_toStartOf="@+id/imageTrumpet"
-            app:layout_constraintHorizontal_bias="0.5"
-            app:layout_constraintHorizontal_chainStyle="packed"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="@+id/imageTrumpet"
-            app:srcCompat="@drawable/note" />
+            android:layout_width="70dp"
+            android:layout_height="70dp" />
     </ConstraintSet>
 
 </MotionScene>
