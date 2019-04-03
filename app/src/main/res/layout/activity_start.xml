@@ -5,7 +5,7 @@
     android:id="@+id/activity_start_start"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/background_start_layout"
+    android:background="@drawable/zanaves3"
     app:layoutDescription="@xml/motion_scene_start_layout"
     tools:context=".StartActivity">
 
@@ -13,22 +13,22 @@
         android:id="@+id/button_play"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="24dp"
+        android:onClick="start_play"
         android:text="PLAY"
+        android:textSize="24dp"
         app:layout_constraintBottom_toTopOf="@+id/button_setting"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_chainStyle="packed"
-        android:onClick="start_play"/>
+        app:layout_constraintVertical_chainStyle="packed" />
 
     <Button
         android:id="@+id/button_setting"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
-        android:textSize="24dp"
+        android:onClick="start_settings"
         android:text="SETTINGS"
+        android:textSize="24dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button_play"
-        android:onClick="start_settings"/>
+        app:layout_constraintTop_toBottomOf="@+id/button_play" />
 
 </android.support.constraint.motion.MotionLayout>
