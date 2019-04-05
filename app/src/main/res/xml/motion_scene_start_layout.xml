@@ -5,7 +5,7 @@
         android:id="@+id/my_transition"
         app:constraintSetEnd="@id/end_scene"
         app:constraintSetStart="@id/start_scene"
-        app:duration="1500">
+        app:duration="2500">
     </Transition>
 
     <ConstraintSet android:id="@+id/start_scene">
@@ -32,6 +32,7 @@
             android:id="@+id/button_play"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:rotationX="360"
             app:layout_constraintBottom_toTopOf="@id/button_setting"
             app:layout_constraintVertical_chainStyle="packed"
             app:layout_constraintEnd_toEndOf="parent"
